@@ -48,10 +48,9 @@
   <h2>Requirements</h2>
   <ul>
     <li>PHP 8+</li>
-    <li>Composer</li>
-    <li>Node.js + npm/yarn</li>
-    <li>MySQL/MariaDB</li>
-    <li>Apache/Nginx with wildcard subdomain support (<code>*.myapp.test</code>)</li>
+    <li>Laravel 12</li>
+    <li>npm</li>
+    <li>MySQL</li>
   </ul>
 
 </body>
