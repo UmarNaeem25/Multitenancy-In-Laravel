@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>MyApp – Multi-Tenant Laravel + React Application</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 2rem; color: #1f2937; }
-    h1, h2 { color: #0f172a; }
-    code, pre { background: #f3f4f6; border-radius: 6px; }
-    pre { padding: 1rem; overflow: auto; }
-    ul { margin-left: 1.25rem; }
-    .tag { display: inline-block; background:#eef2ff; color:#3730a3; padding:.15rem .45rem; border-radius:4px; font-size:.85rem; margin-left:.25rem;}
-  </style>
+
 </head>
 <body>
 
