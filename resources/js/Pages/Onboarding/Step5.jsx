@@ -10,18 +10,28 @@ export default function Step5() {
     post(route('onboarding.storeStep5'));
   };
 
+ 
+  const formatKey = (key) => {
+    return key
+      .replace(/_/g, ' ')
+      .replace(/\b\w/g, (c) => c.toUpperCase());
+  };
 
   const renderObject = (obj) => {
-    return Object.entries(obj).map(([key, value]) => (
-      <div className="mb-2" key={key}>
-        <strong>{key}:</strong>{' '}
-        {typeof value === 'object' && value !== null ? (
-          <div className="ms-3">{renderObject(value)}</div>
-        ) : (
-          <span>{value}</span>
-        )}
-      </div>
-    ));
+    return (
+      <ul className="list-unstyled mb-0">
+        {Object.entries(obj).map(([key, value]) => (
+          <li className="mb-2" key={key}>
+            <strong>{formatKey(key)}:</strong>{' '}
+            {typeof value === 'object' && value !== null ? (
+              <div className="ms-3">{renderObject(value)}</div>
+            ) : (
+              <span>{value}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    );
   };
 
   return (

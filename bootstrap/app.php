@@ -22,6 +22,7 @@ return Application::configure(basePath: dirname(__DIR__))
             \App\Http\Middleware\InitializeTenant::class,
             \Spatie\Multitenancy\Http\Middleware\NeedsTenant::class,
             \Spatie\Multitenancy\Http\Middleware\EnsureValidTenantSession::class,
+            \App\Http\Middleware\PreventAccessFromCentralDomains::class,
         ]);
 
         $middleware->alias([
